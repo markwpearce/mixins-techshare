@@ -1,8 +1,10 @@
 import { Horse } from "./horse";
 import { Transportable } from "./transportable";
+// import { Loggable, Timestamped } from "./user-example";
 
 console.log("Create...");
 const buck = new (Transportable(Horse))("Buck");
+// const buck = new (Timestamped(Loggable(Transportable(Horse))))("Buck");
 
 console.log(`${buck.name} has ${buck.numberOfLegs} legs`);
 console.log("Breathe...");
