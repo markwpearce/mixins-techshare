@@ -1,9 +1,5 @@
 export class Animal {
-  name: string;
-
-  constructor(name: string) {
-    this.name = name;
-  }
+  constructor(public name: string) {}
 
   breathe() {
     console.log(this.name, `*inhales* *exhales*`);
