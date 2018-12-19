@@ -44,7 +44,7 @@ class Mammal extends Animal {
   }
 }
 
-class Horse extends Animal {
+class Horse extends Mammal {
   gallop() {}
   trot() {}
 }
