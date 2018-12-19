@@ -5,6 +5,7 @@ Created for REDspace TechShare Dec 19 2018
 ## Classical Inheritance
 
 A is a B is C
+
 Ferrari is a Car is a Vehicle
 
 ```ts
@@ -25,6 +26,7 @@ class Ferrari extends Car {
 ```
 
 A is a B is C
+
 Horse is a Mammal is a Animal
 
 ```ts
@@ -51,7 +53,9 @@ class Horse extends Animal {
 ## But wait a second... Can’t you ride a horse?
 
 So, really, a horse is vehicle, right?
+
 So:
+
 Horse is a Vehicle, not a Animal?
 
 But then it can’t eat!
@@ -97,6 +101,7 @@ class Horse extends Vehicle, Animal { // THIS IS NOT ALLOWED!
 ## Soved with Mixins!
 
 Inheritance: think _something is a something else_ (A Horse is an Animal)
+
 Mixins: think _something has this other ability_ (A Horse has the ability to transport)
 
 A mixin:
