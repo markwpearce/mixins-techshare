@@ -1,27 +1,5 @@
-import { Mammal } from "./mammal";
-import { Constructable } from "./mixin-helpers";
-
-class Horse extends Mammal {
-  gallop() {
-    console.log(this.name, "Gallop -> 🐎");
-  }
-  trot() {
-    console.log(this.name, "trot -> 🎠");
-  }
-}
-
-function Transportable<TBase extends Constructable>(Base: TBase) {
-  return class extends Base {
-    position = 0;
-    transport(distance: number) {
-      this.position += distance;
-      console.log(
-        `Transporting ${distance} - Current position: ` +
-          "⏩".repeat(this.position)
-      );
-    }
-  };
-}
+import { Horse } from "./horse";
+import { Transportable } from "./transportable";
 
 console.log("Create...");
 const buck = new (Transportable(Horse))("Buck");
